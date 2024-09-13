@@ -7,12 +7,8 @@ apt-get -y install nginx openssl
 
 RUN mkdir -p /etc/nginx/ssl/
 
-RUN openssl req \
-    -x509 \
-    -nodes \
-    -out /etc/nginx/ssl/ft_transcendence_host.crt \
-    -keyout /etc/nginx/ssl/ft_transcendence_host.key \
-    -subj "/C=FR/ST=PACA/L=Nice/O=42/OU=42Nice/CN=127.0.0.1"
+COPY ssl/ft_transcendence_host.crt /etc/nginx/ssl/ft_transcendence_host.crt
+COPY ssl/ft_transcendence_host.key /etc/nginx/ssl/ft_transcendence_host.key
 
 COPY nginx.conf /etc/nginx/conf.d/nginx.conf
 
