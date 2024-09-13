@@ -6,6 +6,7 @@ nav.displayMenu = async function()
     document.getElementById('main_menu_page').style.display = "block";
     document.getElementById('main_menu_buttons').style.display = "block";
     document.getElementById('main_menu_toolbar').style.display = "block";
+    document.getElementById('footer_div').style.display = "block";
 
     stop_flag = true;
     active = false;
@@ -56,6 +57,7 @@ function setBackground(pagePath)
         || pagePath == '/create-lobby' || pagePath == '/join-lobby' || pagePath == '/tournament-nicknames')
     {
         document.getElementById('background_menu_1').style.display = 'block';
+        document.getElementById('footer_div').style.display = "block";
         document.getElementById('soliton-radar').style.display = "block";
         icons[Math.floor(Math.random() * 12)].classList.remove('d-none');
         weapons[Math.floor(Math.random() * 15)].classList.remove('d-none');

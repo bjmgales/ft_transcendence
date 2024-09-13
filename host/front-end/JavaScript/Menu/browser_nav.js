@@ -193,6 +193,7 @@ async function handleLocation(){
         case getSpecificTranslation('es', '/credits'):
         case '/credits':
             pushHistory = false;
+            document.getElementById('footer_div').style.display ="block";
             nav.displayMenu();
             return;
         case getSpecificTranslation('fr', '/privacy'):

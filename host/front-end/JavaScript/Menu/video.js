@@ -15,7 +15,6 @@ nav.theaterCredits = async function(){
 	await sleep(500);
     website.style.display = 'none';
     document.getElementById('credit_close').style.display = 'block';
-	document.getElementById('footer_div').style.display = 'none';
 	video.style.opacity = '1'
 	await sleep(500)
     video.play();

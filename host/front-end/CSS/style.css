@@ -12,7 +12,7 @@
     font-family: 'mgs';
     src: url(../Materials/fonts/mgs-font-1.woff), format("woff");
   }
-  
+
 
 @font-face {
     font-family: 'main-btn';
@@ -344,6 +344,7 @@ pre{
     top: 0%;
     left: 0%;
     background-color: black;
+    z-index: 1;
 }
 .btn:hover:not(.border, .btn-outline-success, .btn-outline-secondary, .btn-outline-danger, .dark_btn, #intra_login, .dropdown_btn, .foot, .sb_nav, #o-cqc, #c-cqc, #cpy_inv_code, #init_p2p){
     transition: 1s;
@@ -392,6 +393,7 @@ pre{
     display: none;
     top: 1%;
     left: 90%;
+    z-index: 2;
 }
 
 #konami_toast, #credits_toast, #lcl_toast, #h_won_toast, #h_lost_toast, #g_won_toast, #g_lost_toast

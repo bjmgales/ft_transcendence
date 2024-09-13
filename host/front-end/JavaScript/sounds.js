@@ -46,7 +46,7 @@ function refreshSounds()
 	let sound_toggler = document.getElementById('sound_toggle');
 
 	if (localStorage.getItem('sound') == null)
-		localStorage.setItem('sound', 'off');
+		localStorage.setItem('sound', 'on');
 
 	if (localStorage.getItem('sound') == 'off'){
 		for (let i = 0; i < sounds.length; i++)
